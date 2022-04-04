@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
 #  - resources/namespace.yaml # ignore namespace creation - we don't want it cleaned if the app is destroyed because it will also remove our secrets
   - https://raw.githubusercontent.com/argoproj/argo-events/stable/manifests/install.yaml
-  - https://raw.githubusercontent.com/argoproj/argo-events/stable/examples/eventbus/native.yaml
 
 #patchesStrategicMerge:
 #  - overlays/workflow-controller-configmap.yaml
